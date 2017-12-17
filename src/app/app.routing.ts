@@ -3,9 +3,12 @@ import {RouterModule,Routes} from '@angular/router';
 
 import { VideoListComponent } from './video-list/video-list.component';
 import { VideoDetailsComponent } from './video-details/video-details.component';
-
+import { HomeComponent } from './home/home.component';
 const appRoutes:Routes=[
   {
+    path:"",
+    component:HomeComponent
+  },{
     path:"videos",
     component:VideoListComponent
   },
